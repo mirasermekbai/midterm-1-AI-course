@@ -77,25 +77,25 @@ L needs two servers and saves 31858.09 a year. Lower observed accuracy, Kazakh e
 
 ### Q1
 
-Number:
-Why (at most 40 words):
+Number: 2.42
+Why (at most 40 words): The token ratio is 2.71. Output tokens cost six times as much as input tokens. EN has a larger share of output tokens, so counting their higher price gives a smaller bill ratio of 2.42.
 
 ### Q2
 
-Number:
-Why (at most 40 words):
+Number: 22.1 %
+Why (at most 40 words): A full chunk becomes 657.5 e5 tokens in EN, 320 in RU and 190 in KK. Only EN exceeds 512. Its last 145.5 tokens (22.1%) are cut off, so the embedding cannot use their information.
 
 ### Q3
 
-Number:
-Why (at most 40 words):
+Number: 80.2 %
+Why (at most 40 words): At T = 0.4, Monday becomes more likely, but the token order stays the same. All five tokens still have a chance of being sampled. Temperature changes probabilities; it does not cut tokens out.
 
 ### Q4
 
-Number:
-Why (at most 40 words):
+Number: 29.6 %
+Why (at most 40 words): The course's simplified bound applies to birthdays and account numbers. I left out multiplication and sequences because rules can produce their answers. Saying 'never invent' adds no missing knowledge, so this instruction alone does not remove the bound.
 
 ### Q5
 
-Number:
-Why (at most 40 words):
+Number: 29400
+Why (at most 40 words): The first message is paid for 24 times, once on each turn. Caching can reuse the repeated history and may lower its price. It does not change the full history or this uncached total.
