@@ -54,12 +54,24 @@ Test A, k=3 and B, k=5 on the same 600 new questions, 200 per language. Compare 
 
 | pipeline | overall accuracy | weakest cell (language, condition) | accuracy there | lower | upper | annual cost |
 |---|---|---|---|---|---|---|
-| H | | | | | | |
-| L | | | | | | |
+| H | 0.900000 | KK, degraded | 0.766667 | 0.590713 | 0.882078 | 49858.09 |
+| L | 0.822222 | KK, degraded | 0.666667 | 0.487797 | 0.807697 | 18000.00 |
 
-Personal-data pages per year sent abroad under H:
+Personal-data pages per year sent abroad under H: 189800
 
 ### 2b. Memo (at most 300 words)
+
+To: Head of Operations
+
+I would choose L. It got 148/180 invoices right (82.22%), compared with H's 162/180 (90.00%). Annual costs are 18000 for L and 49858.09 for H. Both did worst on degraded Kazakh scans: L got 20/30 right, 66.67% (95% Wilson interval [48.78%, 80.77%]); H got 23/30, 76.67% ([59.07%, 88.21%]). The overall scores hide this problem. There are only 30 invoices in each group. The intervals overlap, so we cannot be sure H really performs better for this group.
+
+With H, every scan goes abroad. That includes 189800 pages a year with names and IINs. We know the provider receives them, but need to find out where copies are stored, who else can access or store them, and how long images, logs and backups are kept. No. 94-V covers IIN; a vendor's promise is not a compliance review.
+
+With L, scans go to the bank's servers in Kazakhstan, and the bank manages the main storage. We still need to check administrator access, whether backups or telemetry leave the country, and when stored copies and logs are deleted.
+
+For L, block outgoing scan transfers and check firewall logs. Encrypt stored files, limit access by role and record access. Set deletion deadlines for scans, extracted data, logs and backups; test deletion and backup restores. Have a person check results before payment, especially degraded Kazakh scans. Each month, test fresh labelled invoices by language and scan condition and report errors and Wilson intervals.
+
+L needs two servers and saves 31858.09 a year. Lower observed accuracy, Kazakh errors, security failures and extra review costs remain risks. Reconsider after a larger test.
 
 ## Part 3: Explain your own numbers
 
