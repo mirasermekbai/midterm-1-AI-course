@@ -9,7 +9,11 @@ Fingerprint: 4e2634f0
 
 ## AI-use declaration
 
-(About half a page: which assistants or tools you used and for what. If you used none, say so.)
+I used OpenAI Codex for all three parts of this assignment. It read the instructions and files, ran the data generator for mirasermekbai with code zebra-28, and prepared a full draft of the answers. It used Python 3.9 for the calculations and separate AI checks to look for mistakes.
+
+For Part 1, Codex counted the retrieval hits, calculated recall, MRR, Wilson intervals and annual costs, and drafted the choice and next measurement. For Part 2, it calculated document accuracy, costs and personal-data page counts, then drafted the pipeline choice and memo. This included the discussion of storage, access, deletion and human checks. For Part 3, it calculated all five answers and wrote the short explanations. Q4 was also checked against [Why Language Models Hallucinate, section 3.3.1](https://arxiv.org/html/2509.04664v1#S3.SS3.SSS1).
+
+I then asked Codex for simpler English and separate commits for each part. The commits group the already prepared draft by topic. All results use the assignment's synthetic data. Codex checked the formulas, format and word limits. I am responsible for the submitted answers and for explaining them during the oral check.
 
 ## Part 1: Retrieval and cost decision
 
